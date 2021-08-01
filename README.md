@@ -55,6 +55,7 @@ There is an issue with the initial layout if the text in the three "cards" is no
 - A related issue where the text in the "card" was very short caused the respective card to be rendered too narrow, which resulted in gaps on either side of the content.
 - This issue was resuolved byu setting the "card" to have a width of 100% of its parent.
 - Better semantic names were assigned to the outer blocks: `<main>`, and `<footer>`.
+- Media query added to intrduce "switch-over" point for screens between 500 and 749 pixels wide, otherwise the "luxury" card wraps on to another row.
 
 ### Built with
 

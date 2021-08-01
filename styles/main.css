@@ -100,8 +100,40 @@
   color: hsl(228, 45%, 44%);
 }
 
-@media (max-width: 750px) {
+@media (max-width: 749px) {
   .cards {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 749px) {
+  .card {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "image heading"
+      "cta text";
+  }
+
+  .card__img {
+    grid-area: image;
+  }
+
+  .card__heading {
+    grid-area: heading;
+  }
+
+  .card__text {
+    grid-area: text;
+  }
+
+  .card__cta {
+    grid-area: cta;
+  }
+
+  .card__cta__wrapper {
+    position: relative;
+    bottom: 0;
   }
 }

@@ -29,6 +29,8 @@
   margin: 0 auto;
   padding: 3rem;
   font-size: 0.75rem;
+  width: 100%;
+  position: relative; /* So thet we can position the CTA */
 }
 
 .card--sedan {
@@ -39,12 +41,12 @@
   background-color: var(--clr-bg-suv);
 }
 
-.card__img {
-  padding-bottom: 2rem;
-}
-
 .card--luxury {
   background-color: var(--clr-bg-luxury);
+}
+
+.card__img {
+  padding-bottom: 2rem;
 }
 
 .card__heading {
@@ -58,7 +60,12 @@
   padding: 2rem 0;
 }
 
-.card__link {
+.card__cta__wrapper {
+  position: absolute;
+  bottom: 2rem;
+}
+
+.card__cta {
   text-decoration: none;
   background-color: var(--clr-hl);
   padding: 0.75rem 1.75rem;
@@ -66,19 +73,19 @@
   border: 1px solid --clr-hl;
 }
 
-.card--sedan .card__link {
+.card--sedan .card__cta {
   color: var(--clr-bg-sedan);
 }
 
-.card--suv .card__link {
+.card--suv .card__cta {
   color: var(--clr-bg-suv);
 }
 
-.card--luxury .card__link {
+.card--luxury .card__cta {
   color: var(--clr-bg-luxury);
 }
 
-.card__link:hover {
+.card__cta:hover {
   background-color: transparent;
   color: var(--clr-hl);
   border: 1px solid var(--clr-hl);

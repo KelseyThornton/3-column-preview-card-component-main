@@ -7,6 +7,7 @@ This is a solution to the [3-column preview card component challenge on Frontend
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshots](#screenshots)
+  - [Issues](#issues)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -34,9 +35,17 @@ Screenshot of the deskop layout. On the first card the (invisible) cursor is cur
 
 Screenshot of the mobile layout.
 
+### Screenshots
+
+During the build, I encountered some issues.
+
 ![](./images/issue.png)
 
 There is an issue with the initial layout if the text in the three "cards" is not of similar lengths.
+
+![](./images/intermediate.png)
+
+If a mobile devise is rotated to landscape mode, then the layout was showing the "luxury" card on a separate line. I have addressed this by creating a new layout for devices between 500 and 749 pixels wide.
 
 ### Links
 

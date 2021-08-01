@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800&family=Lexend+Deca&display=swap");
+
+:root {
+  --clr-bg-sedan: hsl(31, 77%, 52%);
+  --clr-bg-suv: hsl(184, 100%, 22%);
+  --clr-bg-luxury: hsl(179, 100%, 13%);
+  --clr-fg: hsla(0, 0%, 100%, 0.75);
+  --clr-hl: hsl(0, 0%, 95%);
+  --font-cursive: "Big Shoulders Display", cursive;
+  --font-sans-serif: "Lexend Deca", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: var(--font-sans-serif);
+  line-height: 1.5rem;
+}
+
+.cards {
+  max-width: 900px;
+  margin: 0 auto;
+  color: var(--clr-fg);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.card {
+  margin: 0 auto;
+  padding: 3rem;
+  font-size: 0.75rem;
+}
+
+.card--sedan {
+  background-color: var(--clr-bg-sedan);
+}
+
+.card--suv {
+  background-color: var(--clr-bg-suv);
+}
+
+.card__img {
+  padding-bottom: 2rem;
+}
+
+.card--luxury {
+  background-color: var(--clr-bg-luxury);
+}
+
+.card__heading {
+  text-transform: uppercase;
+  font-family: var(--font-cursive);
+  font-size: 2rem;
+  color: var(--clr-hl);
+}
+
+.card__text {
+  padding: 2rem 0;
+}
+
+.card__link {
+  text-decoration: none;
+  background-color: var(--clr-hl);
+  padding: 0.75rem 1.75rem;
+  border-radius: 1010px;
+  border: 1px solid --clr-hl;
+}
+
+.card--sedan .card__link {
+  color: var(--clr-bg-sedan);
+}
+
+.card--suv .card__link {
+  color: var(--clr-bg-suv);
+}
+
+.card--luxury .card__link {
+  color: var(--clr-bg-luxury);
+}
+
+.card__link:hover {
+  background-color: transparent;
+  color: var(--clr-hl);
+  border: 1px solid var(--clr-hl);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

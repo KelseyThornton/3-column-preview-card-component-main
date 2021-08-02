@@ -27,11 +27,17 @@
 }
 
 .card {
+  display: grid;
   margin: 0 auto;
   padding: 3rem;
   font-size: 0.75rem;
   width: 100%;
-  position: relative; /* So thet we can position the CTA */
+  grid-template-rows: 20% 10% 50% 20%;
+  grid-template-areas:
+    "image"
+    "heading"
+    "text"
+    "cta";
 }
 
 .card--sedan {
@@ -48,6 +54,7 @@
 
 .card__img {
   padding-bottom: 2rem;
+  grid-area: image;
 }
 
 .card__heading {
@@ -55,15 +62,17 @@
   font-family: var(--font-cursive);
   font-size: 2rem;
   color: var(--clr-hl);
+  grid-area: heading;
 }
 
 .card__text {
   padding: 2rem 0;
+  grid-area: text;
 }
 
 .card__cta__wrapper {
-  position: absolute;
-  bottom: 2rem;
+  grid-area: cta;
+  align-self: end;
 }
 
 .card__cta {
@@ -108,32 +117,15 @@
 
 @media (min-width: 500px) and (max-width: 749px) {
   .card {
-    display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
     grid-template-areas:
       "image heading"
       "cta text";
   }
 
-  .card__img {
-    grid-area: image;
-  }
-
-  .card__heading {
-    grid-area: heading;
-  }
-
-  .card__text {
-    grid-area: text;
-  }
-
-  .card__cta {
-    grid-area: cta;
-  }
-
   .card__cta__wrapper {
-    position: relative;
-    bottom: 0;
+    align-self: inherit;
   }
 }

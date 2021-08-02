@@ -65,12 +65,13 @@ If a mobile devise is rotated to landscape mode, then the layout was showing the
 - This issue was resuolved byu setting the "card" to have a width of 100% of its parent.
 - Better semantic names were assigned to the outer blocks: `<main>`, and `<footer>`.
 - Media query added to intrduce "switch-over" point for screens between 500 and 749 pixels wide, otherwise the "luxury" card wraps on to another row.
+- Once this was completed, I re-did the design using CSS grid and grid areas to present the content on all display sizes.
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
+- Flexbox (initially)
 - CSS Grid
 - Mobile-first workflow
   <!-- - [React](https://reactjs.org/) - JS library -->

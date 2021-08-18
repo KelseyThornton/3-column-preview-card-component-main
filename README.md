@@ -84,5 +84,5 @@ items in a CSS grid aren't automatically as wide as the parent element!
 
 ## Author
 
-- Website - [Kelsey Thornton](https://www.your-site.com)
+- Website - [Kelsey Thornton](https://github.com/KelseyThornton)
 - Frontend Mentor - [@KelseyThornton](https://www.frontendmentor.io/profile/KelseyThornton)

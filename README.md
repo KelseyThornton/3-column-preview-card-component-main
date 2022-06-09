@@ -41,11 +41,11 @@ During the build, I encountered some issues.
 
 ![](./images/issue.png)
 
-There is an issue with the initial layout if the text in the three "cards" is not of similar lengths.
+There is an issue with the initial layout if the text in the three cards is not of similar lengths.
 
 ![](./images/intermediate.png)
 
-If a mobile devise is rotated to landscape mode, then the layout was showing the "luxury" card on a separate line. I have addressed this by creating a new layout for devices between 500 and 749 pixels wide.
+If a mobile devise is rotated to landscape mode, then the layout was showing the luxury card on a separate line. I have addressed this by creating a new layout for devices between 500 and 749 pixels wide.
 
 ### Links
 
@@ -56,15 +56,15 @@ If a mobile devise is rotated to landscape mode, then the layout was showing the
 
 - Initially create the HTML file and look at the rendered document on a narrow window (simulate mobile view).
 - Separate the content in to logical packets:
-  - Each of the "cards" was defined as an `<article>`
-  - The "cards" were grouped together in one `<section>` (later renamed to `<main>`)
-- CSS was generated to render the "cards" as required.
-- While changing the screen width, an issue was found where the "call to action" buttons did not line up nicely at the bottom of the "card", but simply after the text.
-- This issue was resulved by using absolute positioning on the "cta" within the parent "card".
-- A related issue where the text in the "card" was very short caused the respective card to be rendered too narrow, which resulted in gaps on either side of the content.
-- This issue was resuolved byu setting the "card" to have a width of 100% of its parent.
+  - Each of the cards was defined as an `<article>`
+  - The cards were grouped together in one `<section>` (later renamed to `<main>`)
+- CSS was generated to render the cards as required.
+- While changing the screen width, an issue was found where the 'call to action' buttons did not line up nicely at the bottom of the card, but simply after the text.
+- This issue was resulved by using absolute positioning on the 'cta' within the parent card.
+- A related issue where the text in the card was very short caused the respective card to be rendered too narrow, which resulted in gaps on either side of the content.
+- This issue was resuolved byu setting the card to have a width of 100% of its parent.
 - Better semantic names were assigned to the outer blocks: `<main>`, and `<footer>`.
-- Media query added to intrduce "switch-over" point for screens between 500 and 749 pixels wide, otherwise the "luxury" card wraps on to another row.
+- Media query added to intrduce switch-over point for screens between 500 and 749 pixels wide, otherwise the luxury card wraps on to another row.
 - Once this was completed, I re-did the design using CSS grid and grid areas to present the content on all display sizes.
 
 ### Built with
